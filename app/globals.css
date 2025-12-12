@@ -24,3 +24,60 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.golf-blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60vw;
+  height: 70vh;
+  background: #059641;          /* green area */
+  border-radius: 55% 45% 50% 50% / 40% 60% 55% 45%; /* organic shape */
+  transform: translate(-5%, -5%);
+}
+
+.golf-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  width: 55vw;         /* scale with screen size */
+  height: 55vh;        /* keep proportions */
+  max-width: 700px;    /* prevents it from getting huge on big screens */
+  max-height: 600px;
+  min-width: 280px;    /* prevents it from shrinking too small */
+  min-height: 250px;
+}
+
+/* Hole */
+.golf-hole {
+  position: absolute;
+  top: 90px;
+  left: 120px;
+  width: 60px;
+  height: 35px;
+  background: #1e1e1e;
+  border-radius: 50%;
+}
+
+/* Flag stick */
+.flag-stick {
+  position: absolute;
+  top: 50px;
+  left: 145px;
+  width: 6px;
+  height: 70px;
+  background: #1e1e1e;
+}
+
+/* Flag */
+.flag {
+  position: absolute;
+  top: 50px;
+  left: 151px;
+  width: 50px;
+  height: 30px;
+  background: #e74c3c;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
